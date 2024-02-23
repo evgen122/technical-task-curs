@@ -1,3 +1,10 @@
+import {FiltrForm} from "../components/FiltrForm/FiltrForm";
+
 export const PageHome = () => {
-  return <h2>Home</h2>;
+  return (
+    <div>
+      <h2>Home</h2>
+      <FiltrForm />
+    </div>
+  );
 };

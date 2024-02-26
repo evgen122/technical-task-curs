@@ -9,6 +9,8 @@ export const SearchBar = ({
   onChangeFilter,
 }) => {
   const handleSubmit = (values, actions) => {
+    //   onChangeFilter()
+    console.log(values);
     //    dispatch(changeUserInfo(values));
     //    stateСhangeModal();
     //    actions.resetForm({password: ""});
@@ -72,9 +74,7 @@ export const SearchBar = ({
             name="price"
             type="number">
             <option value={"all"}>To $</option>
-
             <option value={"$10"}>10</option>
-
             <option value={"$20"}>20</option>
             <option value={"$30"}>30</option>
             <option value={"$40"}>40</option>

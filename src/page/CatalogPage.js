@@ -20,18 +20,23 @@ class CatalogPage extends Component {
     }));
   };
 
-  render() {
-    console.log(this.state);
-
+  getVisibleItem = () => {
     const {carsList, filters} = this.state;
-
-    const visibleItems = carsList.filter(
+    return carsList.filter(
       (item) =>
         (item.make === filters.brand || filters.brand === "all") &&
         (item.rentalPrice === filters.price || filters.price === "all") &&
         item.mileage >= filters.distanceFrom &&
         (item.mileage <= filters.distanceTo || filters.distanceTo === "")
     );
+  };
+
+  render() {
+    console.log(this.state);
+
+    const {filters} = this.state;
+    const visibleItems = this.getVisibleItem();
+
     return (
       <div>
         <h2>Catalog Page</h2>

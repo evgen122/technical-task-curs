@@ -2,7 +2,7 @@
   "name": "technical-task",
   "version": "0.1.0",
   "private": true,
-  "hompage": "https://evgen122.github.io/technical-task-curs",
+  "homepage": "https://evgen122.github.io/technical-task-curs",
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.1",
     "@testing-library/jest-dom": "^5.17.0",
